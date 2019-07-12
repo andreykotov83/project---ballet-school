@@ -3,11 +3,10 @@
   <head>
     <meta name="viewport" content="width=device-width,   initial-scale=1   shrink-to-fit=no">
     <meta charset="utf-8">
-    <title>Monticello</title>
+    <title>Ballet School</title>
     <link rel="stylesheet" href="./swiper-4.5.0/dist/css/swiper.min.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Lato:300,400,400i,700,700i|Montserrat&amp;display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/30c582ccc5.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="./fonts/stylesheet.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/normalize.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap-grid.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
@@ -63,12 +62,12 @@
         <path d="M216.658,210.658c0-3.313-2.687-6-6-6H84.185c-3.313,0-6,2.687-6,6s2.687,6,6,6h126.473C213.971,216.658,216.658,213.971,216.658,210.658z"></path>
       </symbol>
     </svg>
-    <section class="header">
+    <section class="header scro" id="home">
       <div class="heder__wrap">
         <div class="sidenav" id="mySidenav"><a class=" linc closebtn" href="javascript:void(0)" onclick="closeNav()">
             <svg class="close-nav">
               <use xlink:href="#close"></use>
-            </svg></a><a class="nav__linck linc" href="">Home</a><a class="nav__linck linc" href="">About</a><a class="nav__linck linc" href="">Classes</a><a class="nav__linck linc" href="">Trainer</a><a class="nav__linck linc" href="">Gallery</a><a class="nav__linck linc" href="">Shop</a><a class="nav__linck linc" href="">Contact</a></div>
+            </svg></a><a class="nav__linck linc" href="#home">Home</a><a class="nav__linck linc" href="#about">About</a><a class="nav__linck linc" href="#classes">Classes</a><a class="nav__linck linc" href="#trener">Trainer</a><a class="nav__linck linc" href="#gallery">Gallery</a><a class="nav__linck linc" href="#shop">Shop</a><a class="nav__linck linc" href="#contact">Contact</a></div>
         <div id="main"><span class="openMenu d-lg-none d-lg-none" onclick="openNav()">
             <svg class="open-menu">
               <use xlink:href="#menu"></use>
@@ -80,13 +79,13 @@
 </svg>
               </div>
               <ul class="nav d-flex">
-                <li class="nav__item d-none d-lg-block"><a class="nav__linck" href="">Home</a></li>
-                <li class="nav__item d-none d-lg-block"><a class="nav__linck" href="">About</a></li>
-                <li class="nav__item d-none d-lg-block"><a class="nav__linck" href="">Classes</a></li>
-                <li class="nav__item d-none d-lg-block"><a class="nav__linck" href="">Trainers</a></li>
-                <li class="nav__item d-none d-lg-block"><a class="nav__linck" href="">Gallery</a></li>
-                <li class="nav__item d-none d-lg-block"><a class="nav__linck" href="">Shop</a></li>
-                <li class="nav__item d-none d-lg-block"><a class="nav__linck" href="">Contacts</a></li>
+                <li class="nav__item d-none d-lg-block"><a class="nav__linck activ" href="#home">Home</a></li>
+                <li class="nav__item d-none d-lg-block"><a class="nav__linck" href="#about">About</a></li>
+                <li class="nav__item d-none d-lg-block"><a class="nav__linck" href="#classes">Classes</a></li>
+                <li class="nav__item d-none d-lg-block"><a class="nav__linck" href="#trener">Trainers</a></li>
+                <li class="nav__item d-none d-lg-block"><a class="nav__linck" href="#gallery">Gallery</a></li>
+                <li class="nav__item d-none d-lg-block"><a class="nav__linck" href="#shop">Shop</a></li>
+                <li class="nav__item d-none d-lg-block"><a class="nav__linck" href="#contact">Contacts</a></li>
               </ul>
               <div class="header__icon d-flex">
                 <div class="like">
@@ -111,10 +110,10 @@
         <div class="header__text">
           <P class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua.</P>
         </div>
-        <div class="header__btn"><a class="btn" href="#">Join With Us</a></div>
+        <div class="header__btn"><a class="btn" href="javascript:void(0)">Join With Us</a></div>
       </div>
     </section>
-    <section class="about-Us">
+    <section class="about-Us" id="about">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-12">
@@ -140,7 +139,7 @@
         </div>
       </div>
     </section>
-    <section class="ourClasses">
+    <section class="ourClasses" id="classes">
       <div class="container">
         <div class="ourClasses__title"> 
           <h4 class="title-section">Our Classes</h4>
@@ -149,7 +148,7 @@
           <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <br> labore monica curtis dialor monica et dolore magna aliqa.</p>
         </div>
         <div class="row back">
-          <div class="col-lg-5 col-lg-offset-2 col-10 offset-1">
+          <div class="col-lg-5 offset-lg-2 col-10 offset-1">
             <div class="ourClasses__accridited">
               <h4 class="title">Accredited Academic <br> Programming</h4>
               <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscin <br> doeiusmod tempor incididunt ut laberte et dolerima <br> magnato aliqua. Quis ipsum suspedisse ultrices grave <br> semma  semma occacte voluptate velit essensa.</p>
@@ -169,7 +168,7 @@
                     <use xlink:href="#triangle"></use>
                   </svg>Trainer:<span class="span">Lilu Edison</span>
                 </div>
-              </p><a class="btn" href="#">Check In</a>
+              </p><a class="btn" href="javascript:void(0)">Check In</a>
             </div>
           </div>
           <div class="col-lg-5 col-12">
@@ -178,7 +177,7 @@
           <div class="col-lg-5 col-12">
             <div class="ourClasses__dance--img"><img src="img/our-classe2.png"></div>
           </div>
-          <div class="col-lg-5 col-10 offset-1">
+          <div class="col-lg-5 offset-lg-0 col-10 offset-1">
             <div class="ourClasses__dance">
               <h4 class="title">Dance with<br>Charlotte Company</h4>
               <p class="text">Lorem ipsum dolor sit amet, consectetur adipsiing<br>elit, sed do eiusmod tempor incididunt ut labore et<br>dolore magna aliqua. Quis ipsum suspendisse ultrices<br>gravida risus commodo viverra maecenas.</p>
@@ -199,10 +198,10 @@
                   </svg>Trainer:<span class="span">Charlotte Parker</span>
                 </div>
               </p>
-              <div class="dance__btn"><a class="btn" href="#">Check In</a></div>
+              <div class="dance__btn"><a class="btn" href="javascript:void(0)">Check In</a></div>
             </div>
           </div>
-          <div class="col-lg-5 col-lg-offset-2 col-10 offset-1">
+          <div class="col-lg-5 offset-lg-2 col-10 offset-1">
             <div class="ourClasses__classical">
               <h4 class="title">Classical &<br>Contemporary Training</h4>
               <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit, sed do eiusmod tempor incididunt ut labore et<br>dolore magna aliqua. Quis ipsum suspendisse ultrices<br>gravida risus commodo viverra maecenas.</p>
@@ -222,7 +221,7 @@
                     <use xlink:href="#triangle"></use>
                   </svg>Trainer:<span class="span">Camilia Bradshow</span>
                 </div>
-              </p><a class="btn" href="#">Check In</a>
+              </p><a class="btn" href="javascript:void(0)">Check In</a>
             </div>
           </div>
           <div class="col-lg-5 col-12">
@@ -281,248 +280,248 @@
         <path d="M216.658,210.658c0-3.313-2.687-6-6-6H84.185c-3.313,0-6,2.687-6,6s2.687,6,6,6h126.473C213.971,216.658,216.658,213.971,216.658,210.658z"></path>
       </symbol>
     </svg>
-    <section class="slider">
+    <section class="slider" id="trener">
       <div class="slider__wrap">
         <div class="container">
           <div class="swiper-container swiper1">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-xl-5 col-6">
                     <div class="slider__desc"> 
                       <h4 class="title">Camilia Bradshow</h4>
                       <p class="subtitle">Classic Ballet Teacher</p>
                       <p class="age"><span class="span">Age:</span> 35</p>
                       <p class="birthplace"><span class="span">Birthplace:</span> Montreal, Canada</p>
                       <p class="text d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br>eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <p class="schedule d-none">
-                        <div class="first-rice d-none">
+                      <p class="schedule d-none d-lg-block">
+                        <div class="first-rice d-none d-lg-block">
                           <svg class="icon">
                             <use xlink:href="#triangle"></use>
                           </svg><span class="span">2009</span> First Price of Italian Critics as Best Dancer of the Year
                         </div>
-                        <div class="gold-medal d-none">
+                        <div class="gold-medal d-none d-lg-block">
                           <svg class="icon">
                             <use xlink:href="#triangle"></use>
                           </svg><span class="span">2011</span> Gold Medal of Fine Arts from King Juan Carlos
                         </div>
-                        <div class="London d-none">
+                        <div class="London d-none d-lg-block">
                           <svg class="icon">
                             <use xlink:href="#triangle"></use>
                           </svg><span class="span">2018</span> London's Critic's Circle Dance Awards
                         </div>
-                        <div class="menu d-flex"><a class="btn d-none" href="#">Read More</a>
+                        <div class="menu d-flex"><a class="btn d-none d-lg-block" href="javascript:void(0)">Read More</a>
                           <ul class="social d-flex">
-                            <li class="social__item"><a class="social__linck" href="#"><svg class="icon--social"><use xlink:href="#instagram"></use></svg></a></li>
-                            <li class="social__item"><a class="social__linck" href="#"><svg class="icon--social"><use xlink:href="#twitter"></use></svg></a></li>
-                            <li class="social__item"><a class="social__linck" href="#"><svg class="icon--social"><use xlink:href="#facebook"></use></svg></a></li>
+                            <li class="social__item"><a class="social__linck" href="https://www.instagram.com/?hl=ru"><svg class="icon--social"><use xlink:href="#instagram"></use></svg></a></li>
+                            <li class="social__item"><a class="social__linck" href="https://twitter.com/?lang=ru"><svg class="icon--social"><use xlink:href="#twitter"></use></svg></a></li>
+                            <li class="social__item"><a class="social__linck" href="https://uk-ua.facebook.com/"><svg class="icon--social"><use xlink:href="#facebook"></use></svg></a></li>
                           </ul>
                         </div>
                       </p>
                     </div>
                   </div>
-                  <div class="col-4">
+                  <div class="col-xl-6 col-4">
                     <div class="slider__img"><img src="img/Camilia@1.png"></div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-xl-5 col-6">
                     <div class="slider__desc"> 
                       <h4 class="title">Camilia Bradshow</h4>
                       <p class="subtitle">Classic Ballet Teacher</p>
                       <p class="age"><span class="span">Age:</span> 35</p>
                       <p class="birthplace"><span class="span">Birthplace:</span> Montreal, Canada</p>
-                      <p class="text d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br>eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <p class="schedule d-none">
-                        <div class="first-rice">
-                          <svg class="icon d-none">
+                      <p class="text d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br>eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <p class="schedule d-none d-lg-block">
+                        <div class="first-rice d-none d-lg-block">
+                          <svg class="icon">
                             <use xlink:href="#triangle"></use>
                           </svg>2009 First Price of Italian Critics as Best Dancer of the Year
                         </div>
-                        <div class="gold-medal d-none">
+                        <div class="gold-medal d-none d-lg-block">
                           <svg class="icon">
                             <use xlink:href="#triangle"></use>
                           </svg>2011 Gold Medal of Fine Arts from King Juan Carlos
                         </div>
-                        <div class="London d-none">
+                        <div class="London d-none d-lg-block">
                           <svg class="icon">
                             <use xlink:href="#triangle"></use>
                           </svg>2018 London's Critic's Circle Dance Awards
                         </div>
-                        <div class="menu d-flex"><a class="btn d-none" href="#">Read More</a>
+                        <div class="menu d-flex"><a class="btn d-none d-lg-block" href="javascript:void(0)">Read More</a>
                           <ul class="social d-flex">
-                            <li class="social__item"><a class="social__linck" href="#"><svg class="icon--social"><use xlink:href="#instagram"></use></svg></a></li>
-                            <li class="social__item"><a class="social__linck" href="#"><svg class="icon--social"><use xlink:href="#twitter"></use></svg></a></li>
-                            <li class="social__item"><a class="social__linck" href="#"><svg class="icon--social"><use xlink:href="#facebook"></use></svg></a></li>
+                            <li class="social__item"><a class="social__linck" href="https://www.instagram.com/?hl=ru"><svg class="icon--social"><use xlink:href="#instagram"></use></svg></a></li>
+                            <li class="social__item"><a class="social__linck" href="https://twitter.com/?lang=ru"><svg class="icon--social"><use xlink:href="#twitter"></use></svg></a></li>
+                            <li class="social__item"><a class="social__linck" href="https://uk-ua.facebook.com/"><svg class="icon--social"><use xlink:href="#facebook"></use></svg></a></li>
                           </ul>
                         </div>
                       </p>
                     </div>
                   </div>
-                  <div class="col-4">
+                  <div class="col-xl-6 col-4">
+                    <div class="slider__img"><img src="img/trener.png"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-xl-5 col-6">
+                    <div class="slider__desc"> 
+                      <h4 class="title">Camilia Bradshow</h4>
+                      <p class="subtitle">Classic Ballet Teacher</p>
+                      <p class="age"><span class="span">Age:</span> 35</p>
+                      <p class="birthplace"><span class="span">Birthplace:</span> Montreal, Canada</p>
+                      <p class="text d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br>eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <p class="schedule d-none d-lg-block">
+                        <div class="first-rice d-none d-lg-block">
+                          <svg class="icon d-none d-lg-block">
+                            <use xlink:href="#triangle"></use>
+                          </svg>2009 First Price of Italian Critics as Best Dancer of the Year
+                        </div>
+                        <div class="gold-medal d-none d-lg-block">
+                          <svg class="icon">
+                            <use xlink:href="#triangle"></use>
+                          </svg>2011 Gold Medal of Fine Arts from King Juan Carlos
+                        </div>
+                        <div class="London d-none d-lg-block">
+                          <svg class="icon">
+                            <use xlink:href="#triangle"></use>
+                          </svg>2018 London's Critic's Circle Dance Awards
+                        </div>
+                        <div class="menu d-flex"><a class="btn d-none d-lg-block" href="javascript:void(0)">Read More</a>
+                          <ul class="social d-flex">
+                            <li class="social__item"><a class="social__linck" href="https://www.instagram.com/?hl=ru"><svg class="icon--social"><use xlink:href="#instagram"></use></svg></a></li>
+                            <li class="social__item"><a class="social__linck" href="https://twitter.com/?lang=ru"><svg class="icon--social"><use xlink:href="#twitter"></use></svg></a></li>
+                            <li class="social__item"><a class="social__linck" href="https://uk-ua.facebook.com/"><svg class="icon--social"><use xlink:href="#facebook"></use></svg></a></li>
+                          </ul>
+                        </div>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-4">
                     <div class="slider__img"><img src="img/Camilia@1.png"></div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-xl-5 col-6">
                     <div class="slider__desc"> 
                       <h4 class="title">Camilia Bradshow</h4>
                       <p class="subtitle">Classic Ballet Teacher</p>
                       <p class="age"><span class="span">Age:</span> 35</p>
                       <p class="birthplace"><span class="span">Birthplace:</span> Montreal, Canada</p>
-                      <p class="text d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br>eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <p class="schedule d-none">
-                        <div class="first-rice d-none">
-                          <svg class="icon d-none">
+                      <p class="text d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br>eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <p class="schedule d-none d-lg-block">
+                        <div class="first-rice d-none d-lg-block">
+                          <svg class="icon">
                             <use xlink:href="#triangle"></use>
                           </svg>2009 First Price of Italian Critics as Best Dancer of the Year
                         </div>
-                        <div class="gold-medal d-none">
+                        <div class="gold-medal d-none d-lg-block">
                           <svg class="icon">
                             <use xlink:href="#triangle"></use>
                           </svg>2011 Gold Medal of Fine Arts from King Juan Carlos
                         </div>
-                        <div class="London d-none">
+                        <div class="London d-none d-lg-block">
                           <svg class="icon">
                             <use xlink:href="#triangle"></use>
                           </svg>2018 London's Critic's Circle Dance Awards
                         </div>
-                        <div class="menu d-flex"><a class="btn d-none" href="#">Read More</a>
+                        <div class="menu d-flex"><a class="btn d-none d-lg-block" href="javascript:void(0)">Read More</a>
                           <ul class="social d-flex">
-                            <li class="social__item"><a class="social__linck" href="#"><svg class="icon--social"><use xlink:href="#instagram"></use></svg></a></li>
-                            <li class="social__item"><a class="social__linck" href="#"><svg class="icon--social"><use xlink:href="#twitter"></use></svg></a></li>
-                            <li class="social__item"><a class="social__linck" href="#"><svg class="icon--social"><use xlink:href="#facebook"></use></svg></a></li>
+                            <li class="social__item"><a class="social__linck" href="https://www.instagram.com/?hl=ru"><svg class="icon--social"><use xlink:href="#instagram"></use></svg></a></li>
+                            <li class="social__item"><a class="social__linck" href="https://twitter.com/?lang=ru"><svg class="icon--social"><use xlink:href="#twitter"></use></svg></a></li>
+                            <li class="social__item"><a class="social__linck" href="https://uk-ua.facebook.com/"><svg class="icon--social"><use xlink:href="#facebook"></use></svg></a></li>
                           </ul>
                         </div>
                       </p>
                     </div>
                   </div>
-                  <div class="col-4">
+                  <div class="col-xl-6 col-4">
+                    <div class="slider__img"><img src="img/trener.png"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-xl-5 col-6">
+                    <div class="slider__desc"> 
+                      <h4 class="title">Camilia Bradshow</h4>
+                      <p class="subtitle">Classic Ballet Teacher</p>
+                      <p class="age"><span class="span">Age:</span> 35</p>
+                      <p class="birthplace"><span class="span">Birthplace:</span> Montreal, Canada</p>
+                      <p class="text d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br>eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <p class="schedule d-none d-lg-block">
+                        <div class="first-rice d-none d-lg-block">
+                          <svg class="icon">
+                            <use xlink:href="#triangle"></use>
+                          </svg>2009 First Price of Italian Critics as Best Dancer of the Year
+                        </div>
+                        <div class="gold-medal d-none d-lg-block">
+                          <svg class="icon">
+                            <use xlink:href="#triangle"></use>
+                          </svg>2011 Gold Medal of Fine Arts from King Juan Carlos
+                        </div>
+                        <div class="London d-none d-lg-block">
+                          <svg class="icon">
+                            <use xlink:href="#triangle"></use>
+                          </svg>2018 London's Critic's Circle Dance Awards
+                        </div>
+                        <div class="menu d-flex"><a class="btn d-none d-lg-block" href="javascript:void(0)">Read More</a>
+                          <ul class="social d-flex">
+                            <li class="social__item"><a class="social__linck" href="https://www.instagram.com/?hl=ru"><svg class="icon--social"><use xlink:href="#instagram"></use></svg></a></li>
+                            <li class="social__item"><a class="social__linck" href="https://twitter.com/?lang=ru"><svg class="icon--social"><use xlink:href="#twitter"></use></svg></a></li>
+                            <li class="social__item"><a class="social__linck" href="https://uk-ua.facebook.com/"><svg class="icon--social"><use xlink:href="#facebook"></use></svg></a></li>
+                          </ul>
+                        </div>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-4">
                     <div class="slider__img"><img src="img/Camilia@1.png"></div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-xl-5 col-6">
                     <div class="slider__desc"> 
                       <h4 class="title">Camilia Bradshow</h4>
                       <p class="subtitle">Classic Ballet Teacher</p>
                       <p class="age"><span class="span">Age:</span> 35</p>
                       <p class="birthplace"><span class="span">Birthplace:</span> Montreal, Canada</p>
                       <p class="text d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br>eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <p class="schedule d-none">
-                        <div class="first-rice d-none">
+                      <p class="schedule d-none d-lg-block">
+                        <div class="first-rice d-none d-lg-block">
                           <svg class="icon">
                             <use xlink:href="#triangle"></use>
                           </svg>2009 First Price of Italian Critics as Best Dancer of the Year
                         </div>
-                        <div class="gold-medal d-none">
+                        <div class="gold-medal d-none d-lg-block">
                           <svg class="icon">
                             <use xlink:href="#triangle"></use>
                           </svg>2011 Gold Medal of Fine Arts from King Juan Carlos
                         </div>
-                        <div class="London d-none">
+                        <div class="London d-none d-lg-block">
                           <svg class="icon">
                             <use xlink:href="#triangle"></use>
                           </svg>2018 London's Critic's Circle Dance Awards
                         </div>
-                        <div class="menu d-flex"><a class="btn d-none" href="#">Read More</a>
+                        <div class="menu d-flex"><a class="btn d-none d-lg-block" href="javascript:void(0)">Read More</a>
                           <ul class="social d-flex">
-                            <li class="social__item"><a class="social__linck" href="#"><svg class="icon--social"><use xlink:href="#instagram"></use></svg></a></li>
-                            <li class="social__item"><a class="social__linck" href="#"><svg class="icon--social"><use xlink:href="#twitter"></use></svg></a></li>
-                            <li class="social__item"><a class="social__linck" href="#"><svg class="icon--social"><use xlink:href="#facebook"></use></svg></a></li>
+                            <li class="social__item"><a class="social__linck" href="https://www.instagram.com/?hl=ru"><svg class="icon--social"><use xlink:href="#instagram"></use></svg></a></li>
+                            <li class="social__item"><a class="social__linck" href="https://twitter.com/?lang=ru"><svg class="icon--social"><use xlink:href="#twitter"></use></svg></a></li>
+                            <li class="social__item"><a class="social__linck" href="https://uk-ua.facebook.com/"><svg class="icon--social"><use xlink:href="#facebook"></use></svg></a></li>
                           </ul>
                         </div>
                       </p>
                     </div>
                   </div>
-                  <div class="col-4">
-                    <div class="slider__img"><img src="img/Camilia@1.png"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="row">
-                  <div class="col-6">
-                    <div class="slider__desc"> 
-                      <h4 class="title">Camilia Bradshow</h4>
-                      <p class="subtitle">Classic Ballet Teacher</p>
-                      <p class="age"><span class="span">Age:</span> 35</p>
-                      <p class="birthplace"><span class="span">Birthplace:</span> Montreal, Canada</p>
-                      <p class="text d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br>eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <p class="schedule d-none">
-                        <div class="first-rice d-none">
-                          <svg class="icon">
-                            <use xlink:href="#triangle"></use>
-                          </svg>2009 First Price of Italian Critics as Best Dancer of the Year
-                        </div>
-                        <div class="gold-medal d-none">
-                          <svg class="icon">
-                            <use xlink:href="#triangle"></use>
-                          </svg>2011 Gold Medal of Fine Arts from King Juan Carlos
-                        </div>
-                        <div class="London d-none">
-                          <svg class="icon">
-                            <use xlink:href="#triangle"></use>
-                          </svg>2018 London's Critic's Circle Dance Awards
-                        </div>
-                        <div class="menu d-flex"><a class="btn d-none" href="#">Read More</a>
-                          <ul class="social d-flex">
-                            <li class="social__item"><a class="social__linck" href="#"><svg class="icon--social"><use xlink:href="#instagram"></use></svg></a></li>
-                            <li class="social__item"><a class="social__linck" href="#"><svg class="icon--social"><use xlink:href="#twitter"></use></svg></a></li>
-                            <li class="social__item"><a class="social__linck" href="#"><svg class="icon--social"><use xlink:href="#facebook"></use></svg></a></li>
-                          </ul>
-                        </div>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="slider__img"><img src="img/Camilia@1.png"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="row">
-                  <div class="col-6">
-                    <div class="slider__desc"> 
-                      <h4 class="title">Camilia Bradshow</h4>
-                      <p class="subtitle">Classic Ballet Teacher</p>
-                      <p class="age"><span class="span">Age:</span> 35</p>
-                      <p class="birthplace"><span class="span">Birthplace:</span> Montreal, Canada</p>
-                      <p class="text d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br>eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <p class="schedule d-none">
-                        <div class="first-rice d-none">
-                          <svg class="icon">
-                            <use xlink:href="#triangle"></use>
-                          </svg>2009 First Price of Italian Critics as Best Dancer of the Year
-                        </div>
-                        <div class="gold-medal d-none">
-                          <svg class="icon">
-                            <use xlink:href="#triangle"></use>
-                          </svg>2011 Gold Medal of Fine Arts from King Juan Carlos
-                        </div>
-                        <div class="London d-none">
-                          <svg class="icon">
-                            <use xlink:href="#triangle"></use>
-                          </svg>2018 London's Critic's Circle Dance Awards
-                        </div>
-                        <div class="menu d-flex"><a class="btn d-none" href="#">Read More</a>
-                          <ul class="social d-flex">
-                            <li class="social__item"><a class="social__linck" href="#"><svg class="icon--social"><use xlink:href="#instagram"></use></svg></a></li>
-                            <li class="social__item"><a class="social__linck" href="#"><svg class="icon--social"><use xlink:href="#twitter"></use></svg></a></li>
-                            <li class="social__item"><a class="social__linck" href="#"><svg class="icon--social"><use xlink:href="#facebook"></use></svg></a></li>
-                          </ul>
-                        </div>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="slider__img"><img src="img/Camilia@1.png"></div>
+                  <div class="col-xl-6 col-4">
+                    <div class="slider__img"><img src="img/trener.png"></div>
                   </div>
                 </div>
               </div>
@@ -531,7 +530,7 @@
         </div>
       </div>
     </section>
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="container">
         <div class="gallery__title">
           <h4 class="title-section">Our Gallery</h4>
@@ -540,29 +539,29 @@
           <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br>labore monica curtis dialor monica et dolore magna aliqa.</p>
         </div>
         <div class="row">
-          <div class="col-3">
+          <div class="col-xl-3 col-5">
             <div class="gallery__img"><img src="img/gallery1.png"></div>
           </div>
-          <div class="col-5">
+          <div class="col-xl-5 col-7">
             <div class="gallery__img"><img src="img/gallery2.png"></div>
           </div>
-          <div class="col-4">
+          <div class="col-xl-4 col-6">
             <div class="gallery__img"><img src="img/gallery3.png"></div>
           </div>
-          <div class="col-4">
+          <div class="col-xl-4 col-6">
             <div class="gallery__img"><img src="img/gallery4.png"></div>
           </div>
-          <div class="col-3">
+          <div class="col-xl-3 col-5">
             <div class="gallery__img"><img src="img/gallery5.png"></div>
           </div>
-          <div class="col-5">
+          <div class="col-xl-5 col-7">
             <div class="gallery__img"><img src="img/gallery6.png"></div>
           </div>
         </div>
-        <div class="gallery__btn">           <a class="btn" href="#">View More</a></div>
+        <div class="gallery__btn">           <a class="btn" href="javascript:void(0)">View More</a></div>
       </div>
     </section>
-    <section class="shop">
+    <section class="shop" id="shop">
       <div class="shop__title">
         <h4 class="title-section">New Arrivals</h4>
       </div>
@@ -720,24 +719,12 @@
           </div>
         </div>
       </div>
-      <div class="shop__btn">          <a class="btn" href="#">View More</a></div>
+      <div class="shop__btn">          <a class="btn" href="javascript:void(0)">View More</a></div>
     </section>
-    <section class="reviews">
-      <div class="container">
-        <div class="reviews__title">
-          <h4 class="title">Our Reviews</h4>
-        </div>
-        <div class="reviews__desc">
-          <p class="text">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua quis ipsum suspendisse ultrices.”</p>
-          <p class="text-name">Jessica Bing / Student</p>
-          <div class="reviews__img"><img src="img/student.png"></div>
-        </div>
-      </div>
-    </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-xl-6 col-12">
             <div class="workingHours">
               <h4 class="title title--working">We Are Working</h4>
               <p class="subtitle subtitle--working">Lorem ipsum ist dolor la si ame ruperta alias demo manifica tu arteron<br>carpe diem cum socis amare dalipa segnora amare ligula.</p>
@@ -754,10 +741,10 @@
                 <p class="time">7.00 am - 8.00 pm</p>
               </div>
               <p class="adress">346 Broadway New York, NY 10013</p>
-              <p class="tel"><a class="tel__link" href="#">+800.912.34.56</a></p>
+              <p class="tel"><a class="tel__link" href="javascript:void(0)">+800.912.34.56</a></p>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-xl-6 col-12">
             <div class="Questions">
               <h4 class="title">Do You Have Any Questions?</h4>
               <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do amore<br>eiusmod tempor quis ipsum suspendisse alivar omesta gravida.</p><form action="" class="form-contact">
@@ -780,13 +767,13 @@
 </svg>
         </div>
         <ul class="icon-soc d-flex">
-          <li class="icon-soc__item"><a class="icon-soc__linck" href="#"><svg class="social"><use xlink:href="#instagram"></use></svg></a></li>
-          <li class="icon-soc__item"><a class="icon-soc__linck" href="#"><svg class="social"><use xlink:href="#twitter"></use></svg></a></li>
-          <li class="icon-soc__item"><a class="icon-soc__linck" href="#"><svg class="social"><use xlink:href="#youtube"></use></svg></a></li>
-          <li class="icon-soc__item"><a class="icon-soc__linck" href="#"><svg class="social"><use xlink:href="#facebook"></use></svg></a></li>
-          <li class="icon-soc__item"><a class="icon-soc__linck" href="#"><svg class="social"><use xlink:href="#pinterest"></use></svg></a></li>
+          <li class="icon-soc__item"><a class="icon-soc__linck" href="https://www.instagram.com/?hl=ru"><svg class="social"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="icon-soc__item"><a class="icon-soc__linck" href="https://twitter.com/?lang=ru"><svg class="social"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="icon-soc__item"><a class="icon-soc__linck" href="https://www.youtube.com/?hl=ru&gl=UA&app=desktop"><svg class="social"><use xlink:href="#youtube"></use></svg></a></li>
+          <li class="icon-soc__item"><a class="icon-soc__linck" href="https://uk-ua.facebook.com/""><svg class="social"><use xlink:href="#facebook"></use></svg></a></li>
+          <li class="icon-soc__item"><a class="icon-soc__linck" href="https://www.pinterest.com/"><svg class="social"><use xlink:href="#pinterest"></use></svg></a></li>
         </ul>
-        <div class="scroll"><a class="scrol__linc" href="#">
+        <div class="scroll d-none d-lg-block"><a class="scrol__linc" href="#home">
             <svg class="scroll__icon">
               <use xlink:href="#scroll"></use>
             </svg></a></div>
